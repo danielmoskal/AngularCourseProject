@@ -1,3 +1,4 @@
+import { RecipeEditComponent } from './recipies/recipe-edit/recipe-edit.component';
 import { RecipiesHomeComponent } from './recipies/recipies-home/recipes-home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
@@ -11,7 +12,9 @@ const appRoutes: Routes = [
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'recipies', component: RecipiesComponent, children: [
     {path: '',  component: RecipiesHomeComponent},
-    {path: ':id',  component: RecipeDetailComponent}
+    {path: 'new',  component: RecipeEditComponent},
+    {path: ':id',  component: RecipeDetailComponent},
+    {path: 'edit/:id',  component: RecipeEditComponent},
   ] },
   { path: '**', component: PageNotFoundComponent },
 ];
