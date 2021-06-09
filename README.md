@@ -1,6 +1,6 @@
 # CourseProject
 
-This project is an implementation of practical examples and exercises from this course on Udemy:   
+This project is an implementation of practical course project from this course on Udemy:   
 [Angular - The Complete Guide (2021 Edition)](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
 
 <hr>
